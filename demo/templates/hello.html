@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>form page</title>
+  
+    </head>
+    <body style="text-align: center";>
+        <h1>STUDENT REGISTRATION FORM</h1>
+        <form  style="border: 5px solid black;
+      margin-left: 400px;
+      margin-right: 400px;" action="" method="post">{% csrf_token %} 
+       <label>USERNAME:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" style="width: 300px;
+          margin: 20px;
+          height: 30px;
+          border: 3px solid black;" name="username"><br>
+        <label>EMAIL:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" style="  width: 300px;
+        margin: 20px;
+        height: 30px;
+        border: 3px solid black;" name="email"><br>
+        <label>PASSWORD:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" style="  width: 300px;
+        margin: 20px;
+        height: 30px;
+        border: 3px solid black;" name="password"><br>
+        <label>PHONE NUMBER:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="numbers" style="  width: 300px;
+        margin: 20px;
+        height: 30px;
+        border: 3px solid black;" name="phone"><br>
+        <button style="margin-bottom: 30px;
+        padding: 9px;" type="submit">SUBMIT</button></form> 
+    </body>
+</html>
